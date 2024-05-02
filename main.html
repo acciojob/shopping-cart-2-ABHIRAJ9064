@@ -1,35 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Shopping Cart</h1>
-    <div>
-        <label for="item-name-input">Item Name:</label>
-        <input type="text" id="item-name-input" data-ns-test="item-name">
-        <label for="item-price-input">Item Price:</label>
-        <input type="number" id="item-price-input" data-ns-test="item-price">
-        <button id="add-button">Add</button>
-    </div>
-    <table id="item-list">
-        <thead>
-            <tr>
-                <th data-ns-test="item-name">Item Name</th>
-                <th data-ns-test="item-price">Item Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr data-ns-test="grandTotal">
-                <td>Total:</td>
-                <td id="total-price">0</td>
-            </tr>
-        </tbody>
-    </table>
 
-    <script src="script.js"></script>
+<html>
+
+<head>
+      <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- the entire body must be written by student -->
+	 <h1>Grocery List</h1>
+	<input placeholder="item name" id="item-name-input">
+	<input placeholder="item price" type="number" id="item-price-input">
+	<button onclick="submitItem()">Add</button>
+	
+
+	<table>
+	<tr>
+	<th>Sr. No.</th>
+	<th>Title</th>
+	<th>Price</th>
+	</tr>
+	
+
+	<tr>
+	<td>
+	Grand Total
+	</td>
+	<td data-ns-test="grandTotal">0</td>
+	</tr>
+	</table>	
+    <script type="text/javascript" src="./script.js">
+</script>
+
 </body>
+
 </html>
